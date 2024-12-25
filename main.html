@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 
 <html>
+  <head> </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <div class="sizeInfo">
+      <h1>Width:[] and Height:[]</h1>
+    </div>
+    <!-- the entire body must be written by student -->
+    <script>
+      let message = document.querySelector("h1");
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+      window.addEventListener("resize", (e) => {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        message.innerText = `Width: [${width}] and Height: [${height}]`;
+      });
+    </script>
+  </body>
 </html>
